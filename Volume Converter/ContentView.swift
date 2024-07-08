@@ -40,7 +40,7 @@ struct ContentView: View {
                     }.pickerStyle(.segmented)
                 }
                 Section("Output value") {
-                    Text("\(outputValue, specifier: "%.2f")")
+                    Text("\(outputValue.formatted())")
                 }
                 
             }
